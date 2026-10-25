@@ -95,7 +95,15 @@
     padding: 40px 0 60px;
   }
   .hero-title {
-    font-size: 34px;
+    font-size: 32px;
+    line-height: 1.28;
+    margin-bottom: 22px;
+  }
+  .hero-title span.white {
+    margin-bottom: 12px;
+  }
+  .eyebrow {
+    margin-bottom: 18px;
   }
   .hero-actions {
     flex-direction: column;

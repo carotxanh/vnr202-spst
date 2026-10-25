@@ -380,14 +380,14 @@ class BackgroundMusicController {
       this.playing = false;
       if (this.audioBtn) {
         this.audioBtn.classList.remove('playing');
-        this.audioBtn.querySelector('.btn-text').textContent = 'BẬT ÂM HÀO HÙNG';
+        this.audioBtn.querySelector('.btn-text').textContent = 'BẬT ÂM THANH';
       }
     } else {
       this.audioEl.play().then(() => {
         this.playing = true;
         if (this.audioBtn) {
           this.audioBtn.classList.add('playing');
-          this.audioBtn.querySelector('.btn-text').textContent = 'NHẠC ĐANG PHÁT';
+          this.audioBtn.querySelector('.btn-text').textContent = 'TẮT ÂM THANH';
         }
       }).catch(err => {
         console.log('Audio autoplay prevented by browser policy:', err);
@@ -1005,10 +1005,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const txt = topBtn.querySelector('.btn-text');
     if (playing) {
       topBtn.classList.add('playing');
-      if (txt) txt.textContent = 'NHẠC ĐANG PHÁT';
+      if (txt) txt.textContent = 'TẮT ÂM THANH';
     } else {
       topBtn.classList.remove('playing');
-      if (txt) txt.textContent = 'BẬT ÂM HÀO HÙNG';
+      if (txt) txt.textContent = 'BẬT ÂM THANH';
     }
   }
 
