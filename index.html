@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1612">
+  <title>VNR202 — Sự Lãnh Đạo Của Đảng Đối Với Cách Mạng Hai Miền Nam - Bắc (1954 - 1965)</title>
+  <link rel="icon" type="image/svg+xml" href="assets/vietnam-flag.svg">
+  <meta name="description" content="Chuyên trang học tập môn VNR202 - Lịch sử Đảng Cộng sản Việt Nam. Chương 2, Phần II, Mục 1: Sự lãnh đạo của Đảng đối với cách mạng hai miền Nam - Bắc (1954 - 1965). Bám sát giáo trình SP24, kèm trò chơi chiến lược tương tác lịch sử.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  
+  
+
+  
+
+  <!-- Background Audio (Epic March) -->
+  <audio id="bg-audio" src="assets/audio/background-theme.mp3" preload="auto" loop autoplay></audio>
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <!-- Global Site Header -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="VNR202 Trang chủ">
+      <img class="brand-flag" src="assets/vietnam-flag.svg" alt="Quốc kỳ Việt Nam">
+      <span class="brand-copy">
+        <span class="brand-name">VNR <span class="gold">202</span></span>
+        <small>LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Điều hướng chính">
+      <a href="#tong-quan" class="active">Tổng quan</a>
+      <a href="#duong-loi">Đường lối 2 miền</a>
+      <a href="#nien-bieu">Niên biểu 1954–1965</a>
+      <a href="#tro-choi">Trò chơi Chiến lược</a>
+      <a href="#on-tap">Ôn tập Quiz</a>
+      <a href="#video">Tư liệu Video</a>
+    </nav>
+
+    <div class="header-right">
+      <button id="audio-toggle-btn" class="audio-btn" type="button" aria-label="Bật hoặc tắt nhạc nền hào hùng">
+        <div class="wave-bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="btn-text">BẬT ÂM HÀO HÙNG</span>
+      </button>
+
+      <a href="game.html" class="cta-btn">
+        <span>VÀO BÀN CỜ CHIẾN LƯỢC</span>
+        <span aria-hidden="true">⚔</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Mở danh mục điều hướng">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Điều hướng trên điện thoại">
+    <a href="#tong-quan">01. Tổng quan Bối cảnh</a>
+    <a href="#duong-loi">02. Đường lối Chiến lược 2 Miền</a>
+    <a href="#nien-bieu">03. Niên biểu Lịch sử 1954–1965</a>
+    <a href="#tro-choi">04. Trò chơi Sa bàn & Ấp Bắc</a>
+    <a href="#on-tap">05. Ngân hàng Câu hỏi Ôn tập</a>
+    <a href="#video">06. Thước phim Tư liệu</a>
+    <a href="game.html" style="color: var(--gold); font-weight: 700;">⚔ BẮT ĐẦU CHƠI GAME NGAY</a>
+  </nav>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" role="img" aria-label="Bối cảnh lịch sử cách mạng Việt Nam 1954 - 1965"></div>
+      <div class="hero-shade"></div>
+
+      <div class="shell hero-grid">
+        <div class="hero-text">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>KHÔNG GIAN HỌC TẬP VNR202 • SESSION 15</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            <span class="white">MỘT ĐẢNG • HAI CHIẾN LƯỢC</span>
+            <span class="gold">MỘT MỤC TIÊU THỐNG NHẤT</span>
+          </h1>
+
+          <p class="hero-lead">
+            <strong>Chương 2, Mục II.1: Sự lãnh đạo của Đảng đối với cách mạng hai miền Nam - Bắc (1954 - 1965).</strong>
+            Miền Bắc là <em>hậu phương lớn</em> giữ vai trò quyết định nhất; Miền Nam là <em>tiền tuyến lớn</em> giữ vai trò quyết định trực tiếp. Hai nhiệm vụ chiến lược gắn kết khăng khít, đưa cách mạng từ thế giữ gìn lực lượng sang thế tiến công bão táp.
+          </p>
+
+          <div class="hero-actions">
+            <a href="game.html" class="btn btn-gold">
+              <span>BÀN CỜ CHIẾN LƯỢC 1954–1965</span>
+              <span aria-hidden="true">⚔</span>
+            </a>
+            <a href="#nien-bieu" class="btn btn-ghost">
+              <span>KHÁM PHÁ NIÊN BIỂU</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>11 NĂM</strong>
+              <span>GIAI ĐOẠN 1954 — 1965</span>
+            </div>
+            <div class="stat-item">
+              <strong>02 MIỀN</strong>
+              <span>HAI NHIỆM VỤ CHIẾN LƯỢC</span>
+            </div>
+            <div class="stat-item">
+              <strong>ĐẠI HỘI III</strong>
+              <span>THÁNG 9/1960 TẠI HÀ NỘI</span>
+            </div>
+            <div class="stat-item">
+              <strong>ẤP BẮC</strong>
+              <span>ĐẬP TAN TRỰC THĂNG VẬN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Showcase Dual Card on Hero -->
+        <div class="hero-card">
+          <div class="hero-card-head">
+            <span>ĐẶC ĐIỂM ĐỘC ĐÁO CỦA CÁCH MẠNG VIỆT NAM</span>
+            <span class="badge-tag gold">BUỔI 15 / SLIDE 4</span>
+          </div>
+
+          <div class="dual-pill-container">
+            <div class="pill-block bac">
+              <h4><span>🌾</span> MIỀN BẮC (HẬU PHƯƠNG)</h4>
+              <p>Khôi phục kinh tế, cải tạo XHCN, thực hiện Kế hoạch 5 năm lần thứ nhất. Vai trò <strong>quyết định nhất</strong> đối với toàn bộ cách mạng.</p>
+            </div>
+            <div class="pill-block nam">
+              <h4><span>🔥</span> MIỀN NAM (TIỀN TUYẾN)</h4>
+              <p>Chống "tố cộng diệt cộng", Nghị quyết TW 15, Đồng Khởi Bến Tre, bẻ gãy "Chiến tranh đặc biệt". Vai trò <strong>quyết định trực tiếp</strong>.</p>
+            </div>
+          </div>
+
+          <div class="hero-quote">
+            "Trung - Nam - Bắc đều là bờ cõi của ta, nước ta nhất định thống nhất, đồng bào cả nước nhất định được giải phóng."
+            <cite>— Lời kêu gọi của Chủ tịch Hồ Chí Minh (22/07/1954)</cite>
+          </div>
+
+          <a href="game.html" class="game-preview-cta">
+            <div>
+              <strong>CHỈ HUY BÀN CỜ CHIẾN LƯỢC LỊCH SỬ</strong>
+              <small>Mô phỏng ra quyết định 1954-1965 & tác chiến Ấp Bắc</small>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- PROGRESS TRACKER & BADGES -->
+    <section class="shell" style="margin-top: -36px; position: relative; z-index: 10;">
+      <div class="progress-bar-wrapper">
+        <div class="progress-info">
+          <div class="progress-icon">★</div>
+          <div class="progress-text">
+            <strong>NHẬT KÝ HÀNH TRÌNH VNR202</strong>
+            <small id="progress-count-text">Đang đồng bộ dữ liệu khám phá...</small>
+          </div>
+        </div>
+
+        <div class="progress-meter">
+          <div class="progress-track-bg">
+            <div id="progress-fill" class="progress-track-fill" style="width: 15%;"></div>
+          </div>
+        </div>
+
+        <div class="progress-badges" title="Hệ thống 5 Huy hiệu Lịch sử VNR202">
+          <div id="badge-flag" class="badge-item unlocked" title="Tiếp quản Thủ đô 10/10/1954">🚩</div>
+          <div id="badge-star" class="badge-item" title="Đồng Khởi Bến Tre 1960">⭐</div>
+          <div id="badge-shield" class="badge-item" title="Đại hội Đảng lần thứ III">🛡</div>
+          <div id="badge-sword" class="badge-item" title="Chiến thắng Ấp Bắc 1963">⚔</div>
+          <div id="badge-anchor" class="badge-item" title="Đoàn Tàu Không Số 759">⚓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: HISTORICAL CONTEXT -->
+    <section class="section-pad" id="tong-quan" aria-labelledby="context-title">
+      <div class="shell">
+        <div class="section-index">
+          <span>01 / BỐI CẢNH LỊCH SỬ BẢN LỀ (1954 — 1965)</span>
+          <span class="source">GIÁO TRÌNH VNR202 SP24 • SLIDE 3 – 4</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">TỪ HIỆP ĐỊNH GENÈVE ĐẾN TÌNH THẾ MỚI CỦA ĐẤT NƯỚC</p>
+          <h2 id="context-title" class="section-title">
+            BỐI CẢNH THẾ GIỚI & <span class="gold">ĐẶC ĐIỂM TRONG NƯỚC.</span>
+          </h2>
+          <p class="section-desc">
+            Sau ngày 21/7/1954, cách mạng Việt Nam bước vào một thời kỳ vô cùng đặc biệt. Đất nước tạm thời bị chia cắt làm hai miền; Đảng phải đồng thời xử lý những mâu thuẫn phức tạp của thời đại và hoàn cảnh đặc thù của dân tộc.
+          </p>
+        </div>
+
+        <div class="context-grid">
+          <!-- Card 1: World Context -->
+          <article class="context-card world">
+            <div class="context-card-icon">🌍</div>
+            <h3>BỐI CẢNH QUỐC TẾ</h3>
+            <p>Thời kỳ Chiến tranh Lạnh diễn biến gay gắt, thế giới hình thành hai cực đối đầu sâu sắc.</p>
+            <ul>
+              <li><strong>Ba dòng thác cách mạng:</strong> Phong trào XHCN (Liên Xô lớn mạnh), phong trào giải phóng dân tộc (Á, Phi, Mỹ Latinh) và phong trào hòa bình dân chủ ở các nước tư bản.</li>
+              <li><strong>Mâu thuẫn nội bộ:</strong> Khối XHCN xuất hiện bất đồng tư tưởng, đặc biệt là mâu thuẫn Xô - Trung.</li>
+              <li><strong>Âm mưu của Mỹ:</strong> Đế quốc Mỹ giàu mạnh sau Thế chiến II, ôm mưu đồ bá chủ thế giới, lập phòng tuyến ngăn chặn CNXH tại Đông Nam Á.</li>
+            </ul>
+          </article>
+
+          <!-- Card 2: North Vietnam -->
+          <article class="context-card north">
+            <div class="context-card-icon">🌾</div>
+            <h3>MIỀN BẮC ĐÃ GIẢI PHÓNG</h3>
+            <p>10/10/1954 giải phóng Thủ đô Hà Nội. Miền Bắc hoàn toàn thoát khỏi ách thực dân.</p>
+            <ul>
+              <li><strong>Nhiệm vụ:</strong> Đi lên chủ nghĩa xã hội, trở thành căn cứ địa cách mạng của cả nước và hậu phương lớn cho tiền tuyến miền Nam.</li>
+              <li><strong>Khó khăn:</strong> Nền kinh tế nông nghiệp nghèo nàn, lạc hậu, bị 9 năm kháng chiến tàn phá nặng nề; nạn đói, mù chữ đe dọa.</li>
+              <li><strong>Mục tiêu:</strong> Hàn gắn vết thương chiến tranh, phục hồi kinh tế quốc dân, lấy phục hồi nông nghiệp làm trọng tâm.</li>
+            </ul>
+          </article>
+
+          <!-- Card 3: South Vietnam -->
+          <article class="context-card south">
+            <div class="context-card-icon">🔥</div>
+            <h3>MIỀN NAM BỊ KÌM KẸP</h3>
+            <p>Đế quốc Mỹ hất cẳng Pháp, dựng lên chính quyền bù nhìn Ngô Đình Diệm.</p>
+            <ul>
+              <li><strong>Âm mưu thuộc địa mới:</strong> Biến miền Nam thành thuộc địa kiểu mới và căn cứ quân sự đối đầu trong Chiến tranh Lạnh.</li>
+              <li><strong>Khủng bố tàn khốc:</strong> Ngô Đình Diệm tuyên bố "biên giới Mỹ kéo dài đến vĩ tuyến 17", cự tuyệt hiệp thương tổng tuyển cử, lập "khu trù mật", "khu dinh điền".</li>
+              <li><strong>Đạo luật 10/59:</strong> Đặt miền Nam trong tình trạng chiến tranh, lê máy chém đi khắp miền Nam tàn sát người yêu nước.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Strategic Conclusion Banner -->
+        <div class="strategic-callout">
+          <div class="callout-emblem">1954</div>
+          <div class="callout-body">
+            <h3>ĐẶC ĐIỂM LỚN NHẤT CỦA CÁCH MẠNG VIỆT NAM GIAI ĐOẠN 1954 - 1965</h3>
+            <p>
+              "Một Đảng lãnh đạo đồng thời <strong>hai cuộc cách mạng khác nhau</strong> ở hai miền đất nước có chế độ chính trị - xã hội khác nhau: Cách mạng xã hội chủ nghĩa ở miền Bắc và Cách mạng dân tộc dân chủ nhân dân ở miền Nam. Đây là đặc điểm chưa từng có tiền lệ trong lịch sử cách mạng thế giới."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DUAL STRATEGY MATRIX (ĐẠI HỘI III) -->
+    <section class="section-pad dual-strategy" id="duong-loi" aria-labelledby="strategy-title">
+      <div class="shell">
+        <div class="section-index">
+          <span>02 / ĐƯỜNG LỐI CHIẾN LƯỢC HAI MIỀN (ĐẠI HỘI III - 9/1960)</span>
+          <span class="source">GIÁO TRÌNH VNR202 SP24 • SLIDE 12 – 14</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">QUYẾT SÁCH LỊCH SỬ TẠI THỦ ĐÔ HÀ NỘI</p>
+          <h2 id="strategy-title" class="section-title">
+            MỘT MỤC TIÊU CHUNG: <span class="gold">HÒA BÌNH, THỐNG NHẤT TỔ QUỐC.</span>
+          </h2>
+          <p class="section-desc">
+            Từ ngày 5 đến 10/9/1960, Đại hội đại biểu toàn quốc lần thứ III của Đảng họp tại Hà Nội. Đại hội đã hoàn chỉnh đường lối chiến lược chung của cả nước, phân định rõ ràng vị trí, vai trò của từng miền nhưng khẳng định mối liên hệ máu thịt hữu cơ.
+          </p>
+        </div>
+
+        <div class="strategy-grid">
+          <!-- Column North -->
+          <div class="strategy-col north">
+            <div class="strategy-col-header">
+              <div>
+                <span class="badge-tag cyan">HẬU PHƯƠNG LỚN</span>
+                <h3>CÁCH MẠNG XHCN MIỀN BẮC</h3>
+              </div>
+              <span class="strategy-badge">VAI TRÒ QUYẾT ĐỊNH NHẤT</span>
+            </div>
+
+            <div class="role-highlight">
+              <strong>VỊ TRÍ & VAI TRÒ CỐT LÕI:</strong>
+              <p>Giữ vai trò <em>quyết định nhất</em> đối với sự phát triển của toàn bộ cách mạng Việt Nam và đối với sự nghiệp thống nhất nước nhà.</p>
+            </div>
+
+            <div class="strategy-tasks">
+              <div class="task-box">
+                <h4><span>1.</span> Khôi phục kinh tế & Cải cách ruộng đất (1954 - 1957)</h4>
+                <p>Xóa bỏ hoàn toàn chế độ chiếm hữu ruộng đất phong kiến; chia 810.000 ha cho hơn 2 triệu hộ nông dân; đưa sản lượng nông nghiệp vượt mức năm 1939.</p>
+              </div>
+              <div class="task-box">
+                <h4><span>2.</span> Cải tạo XHCN (1958 - 1960)</h4>
+                <p>Hợp tác hóa nông nghiệp (Tự nguyện, cùng có lợi, quản lý dân chủ). Cải tạo hòa bình công thương nghiệp tư bản tư doanh bằng công tư hợp doanh.</p>
+              </div>
+              <div class="task-box">
+                <h4><span>3.</span> Kế hoạch 5 năm lần 1 (1961 - 1965)</h4>
+                <p>Xây dựng cơ sở vật chất - kỹ thuật CNXH: Khu gang thép Thái Nguyên, Thủy điện Thác Bà. Chi viện quân số gấp 9 lần, vật chất gấp 10 lần cho miền Nam!</p>
+              </div>
+            </div>
+
+            <img src="assets/history/image72.png" alt="Công nghiệp hóa miền Bắc" class="strategy-img-thumb" loading="lazy">
+          </div>
+
+          <!-- Column South -->
+          <div class="strategy-col south">
+            <div class="strategy-col-header">
+              <div>
+                <span class="badge-tag red">TIỀN TUYẾN LỚN</span>
+                <h3>CÁCH MẠNG DTDCND MIỀN NAM</h3>
+              </div>
+              <span class="strategy-badge">VAI TRÒ QUYẾT ĐỊNH TRỰC TIẾP</span>
+            </div>
+
+            <div class="role-highlight">
+              <strong>VỊ TRÍ & VAI TRÒ CỐT LÕI:</strong>
+              <p>Giữ vai trò <em>quyết định trực tiếp</em> đối với sự nghiệp giải phóng miền Nam khỏi ách thống trị của đế quốc Mỹ và bè lũ tay sai, hoàn thành cách mạng DTDCND.</p>
+            </div>
+
+            <div class="strategy-tasks">
+              <div class="task-box">
+                <h4><span>1.</span> Giữ gìn lực lượng & Đấu tranh chính trị (1954 - 1958)</h4>
+                <p>Đồng chí Lê Duẩn khởi thảo Đề cương cách mạng miền Nam (8/1956), khẳng định con đường cứu nước duy nhất là cách mạng bạo lực.</p>
+              </div>
+              <div class="task-box">
+                <h4><span>2.</span> Nghị quyết 15 & Bão táp Đồng Khởi (1959 - 1960)</h4>
+                <p>Nghị quyết TW 15 (1/1959) mở lối dùng bạo lực cách mạng kết hợp chính trị và quân sự; Đồng Khởi Bến Tre 1960; lập Mặt trận Dân tộc Giải phóng (20/12/1960).</p>
+              </div>
+              <div class="task-box">
+                <h4><span>3.</span> Đập tan "Chiến tranh đặc biệt" (1961 - 1965)</h4>
+                <p>Chiến thắng Ấp Bắc (2/1/1963) bẻ gãy "trực thăng vận" và "thiết xa vận". Phong trào phá ấp chiến lược "Một tấc không đi, một ly không rời".</p>
+              </div>
+            </div>
+
+            <img src="assets/history/image85.png" alt="Chiến thắng Ấp Bắc" class="strategy-img-thumb" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Organic Relationship Banner -->
+        <div class="organic-relation">
+          <div class="relation-icon">⚖</div>
+          <div class="relation-text">
+            <h4>MỐI QUAN HỆ BIỆN CHỨNG GIỮA CÁCH MẠNG HAI MIỀN</h4>
+            <p>
+              "Hai nhiệm vụ chiến lược tuy có tính chất và quy luật phát triển khác nhau, nhưng đều nhằm một mục tiêu chung trước mắt là giải phóng miền Nam, hòa bình thống nhất Tổ quốc. <strong>Miền Bắc là cái nền, là chỗ dựa vững chắc cho tiền tuyến miền Nam; miền Nam là tiền đồn bảo vệ miền Bắc xã hội chủ nghĩa.</strong> Mỗi thắng lợi của miền Bắc tiếp thêm sức mạnh cho miền Nam; mỗi đòn tiến công của miền Nam che chắn cho công cuộc kiến thiết của miền Bắc."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- SECTION 2.5: PARTY DOCUMENTS ARCHIVE -->
+    <section class="section-pad" id="van-kien" style="background: rgba(10, 18, 14, 0.7); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="shell">
+        <div class="section-index">
+          <span>HỒ SƠ TƯ LIỆU / VĂN KIỆN LỊCH SỬ ĐẢNG (1954 — 1965)</span>
+          <span class="source">CĂN CỨ GIẢNG DẠY VNR202</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">NGUỒN CỘI CÁC QUYẾT SÁCH CHIẾN LƯỢC</p>
+          <h2 class="section-title">
+            TỦ SÁCH VĂN KIỆN <span class="gold">SOI ĐƯỜNG CÁCH MẠNG.</span>
+          </h2>
+          <p class="section-desc">
+            Khám phá 5 văn kiện và nghị quyết then chốt của Ban Chấp hành Trung ương, Bộ Chính trị và các nhà lãnh đạo tiền bối định hình nên toàn bộ cục diện cuộc kháng chiến chống Mỹ cứu nước giai đoạn 1954 - 1965. Bấm vào từng văn kiện để đọc trích dẫn và phân tích ý nghĩa.
+          </p>
+        </div>
+
+        <div class="doc-grid">
+          <!-- Doc 1 -->
+          <article class="doc-card" onclick="openDocumentModal('doc-9-1954')">
+            <div class="doc-header">
+              <span class="doc-tag">NGHỊ QUYẾT 9/1954</span>
+              <span style="font-size: 16px;">📜</span>
+            </div>
+            <h3>Nhiệm Vụ Chủ Yếu Trước Mắt Của Cách Mạng Hai Miền</h3>
+            <p>Hàn gắn vết thương chiến tranh, phục hồi nông nghiệp làm trọng tâm ở miền Bắc; chuyển sang đấu tranh chính trị đòi thi hành Hiệp định Genève ở miền Nam.</p>
+            <div class="doc-footer">
+              <span>ĐỌC VĂN KIỆN →</span>
+              <span>Slide 5</span>
+            </div>
+          </article>
+
+          <!-- Doc 2 -->
+          <article class="doc-card" onclick="openDocumentModal('doc-decuong-1956')">
+            <div class="doc-header">
+              <span class="doc-tag">ĐỀ CƯƠNG 8/1956</span>
+              <span style="font-size: 16px;">✍</span>
+            </div>
+            <h3>Đề Cương Đường Lối Cách Mạng Miền Nam (Lê Duẩn)</h3>
+            <p>Bản dự thảo lý luận nền tảng khẳng định bản chất thực dân mới của Mỹ - Diệm và con đường cứu nước duy nhất là cách mạng bạo lực nhân dân.</p>
+            <div class="doc-footer">
+              <span>ĐỌC VĂN KIỆN →</span>
+              <span>Slide 9</span>
+            </div>
+          </article>
+
+          <!-- Doc 3 -->
+          <article class="doc-card" onclick="openDocumentModal('doc-tw15-1959')">
+            <div class="doc-header">
+              <span class="doc-tag">NGHỊ QUYẾT TW 15 (1/1959)</span>
+              <span style="font-size: 16px;">⚡</span>
+            </div>
+            <h3>Nghị Quyết Ban Chấp Hành Trung Ương 15</h3>
+            <p>Quyết sách lịch sử mở đường cho bạo lực cách mạng, khởi nghĩa từng phần giành chính quyền, thổi bùng phong trào Đồng Khởi 1960 khắp miền Nam.</p>
+            <div class="doc-footer">
+              <span>ĐỌC VĂN KIỆN →</span>
+              <span>Slide 10</span>
+            </div>
+          </article>
+
+          <!-- Doc 4 -->
+          <article class="doc-card" onclick="openDocumentModal('doc-daihoi3-1960')">
+            <div class="doc-header">
+              <span class="doc-tag">ĐẠI HỘI III (9/1960)</span>
+              <span style="font-size: 16px;">🏛</span>
+            </div>
+            <h3>Nghị Quyết Đại Hội Toàn Quốc Lần Thứ III Của Đảng</h3>
+            <p>Hoàn chỉnh đường lối chung: Miền Bắc giữ vai trò "quyết định nhất"; Miền Nam giữ vai trò "quyết định trực tiếp" đối với sự nghiệp thống nhất.</p>
+            <div class="doc-footer">
+              <span>ĐỌC VĂN KIỆN →</span>
+              <span>Slide 12-14</span>
+            </div>
+          </article>
+
+          <!-- Doc 5 -->
+          <article class="doc-card" onclick="openDocumentModal('doc-kehoach-1961')">
+            <div class="doc-header">
+              <span class="doc-tag">KẾ HOẠCH 5 NĂM (1961-1965)</span>
+              <span style="font-size: 16px;">🏭</span>
+            </div>
+            <h3>Xây Dựng Cơ Sở Vật Chất - Kỹ Thuật Cho CNXH</h3>
+            <p>Công nghiệp hóa XHCN là nhiệm vụ trung tâm; tạo lập sức mạnh kinh tế và quốc phòng để đến năm 1965 chi viện quân sự tăng gấp 9 lần cho miền Nam.</p>
+            <div class="doc-footer">
+              <span>ĐỌC VĂN KIỆN →</span>
+              <span>Slide 15</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE DUAL TIMELINE -->
+    <section class="section-pad" id="nien-bieu" aria-labelledby="timeline-title">
+      <div class="shell">
+        <div class="section-index">
+          <span>03 / NIÊN BIỂU LỊCH SỬ BẢN LỀ (1954 — 1965)</span>
+          <span class="source">ĐỐI CHIẾU SLIDE 3 ĐẾN 17 TRONG GIÁO TRÌNH</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">DẤU ẤN LỊCH SỬ QUA TỪNG BƯỚC NGOẶT</p>
+          <h2 id="timeline-title" class="section-title">
+            HÀNH TRÌNH HAI MIỀN: <span class="gold">TỪ THOÁI TRÀO ĐẾN TIẾN CÔNG.</span>
+          </h2>
+          <p class="section-desc">
+            Chọn bộ lọc bên dưới để tra cứu diễn tiến lịch sử theo từng mặt trận: Miền Bắc kiến thiết CNXH, Miền Nam quật khởi chống Mỹ, hoặc các Tuyến vận tải huyết mạch 559 và 759. Bấm vào từng sự kiện hoặc hình ảnh để xem phân tích chi tiết.
+          </p>
+        </div>
+
+        
+        <!-- Filter & Mini-Game Buttons -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 36px;">
+          <div class="timeline-filter-bar" style="margin-bottom: 0;">
+            <button class="filter-btn active" data-filter="all" type="button">TẤT CẢ (14 SỰ KIỆN)</button>
+            <button class="filter-btn" data-filter="north" type="button">🌾 MIỀN BẮC (HẬU PHƯƠNG)</button>
+            <button class="filter-btn" data-filter="south" type="button">🔥 MIỀN NAM (TIỀN TUYẾN)</button>
+            <button class="filter-btn" data-filter="supply" type="button">⚓ TUYẾN 559 & 759</button>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="btn btn-gold" style="font-size: 11px; padding: 10px 18px;" onclick="openTimelineChallenge()">
+              ⚡ THỬ THÁCH SẮP XẾP NIÊN BIỂU
+            </button>
+            <button class="btn btn-ghost" style="font-size: 11px; padding: 10px 18px; border-color: var(--gold); color: var(--gold);" onclick="openMatchChallenge()">
+              🗂 THỬ THÁCH HỒ SƠ MẬT (GHÉP THẺ)
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Timeline Stream Container -->
+        <div id="timeline-container" class="timeline-stream">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE BRAND NEW GAME FEATURE BANNER -->
+    <section class="section-pad game-feature-banner" id="tro-choi" aria-labelledby="game-feature-title">
+      <div class="shell game-feature-grid">
+        <div class="game-feature-content">
+          <span class="badge-tag gold">TRÒ CHƠI CHIẾN LƯỢC MỚI HOÀN TOÀN</span>
+          <h2 id="game-feature-title">
+            BÀN CỜ LỊCH SỬ <br>
+            <span class="gold">1954 — 1965</span>
+          </h2>
+          <p>
+            Khác biệt hoàn toàn với game bắn súng góc nhìn thứ nhất, <strong>"Bàn Cờ Chiến Lược 1954 - 1965"</strong> đưa bạn vào vai Bộ Chỉ huy tối cao của Đảng, quản lý 4 chỉ số sinh tồn của cách mạng và trực tiếp điều phối sa bàn phòng thủ bẻ gãy chiến thuật "trực thăng vận" & "thiết xa vận" tại trận địa Ấp Bắc.
+          </p>
+
+          <div class="game-modes-list">
+            <div class="game-mode-item">
+              <span class="icon">★</span>
+              <div>
+                <strong>Chế độ 1: Sa Bàn Chiến Lược Toàn Cảnh (Grand Strategy)</strong>
+                <p>Quản lý 4 nguồn lực: Hậu phương miền Bắc, Tiền tuyến miền Nam, Tuyến 559/759, và Mặt trận Chính nghĩa. Giải quyết các tình huống lịch sử thực tế từ giáo trình.</p>
+              </div>
+            </div>
+
+            <div class="game-mode-item">
+              <span class="icon">⚔</span>
+              <div>
+                <strong>Chế độ 2: Phòng Tuyến Ấp Bắc 1963 (Tactical RTS Defense)</strong>
+                <p>Điều phối các tổ súng trường bắn tỉa, đại đội trung liên, tổ mìn B40 và đội quân tóc dài để chặn đứng trực thăng UH-1 và xe bọc thép M113 của Mỹ!</p>
+              </div>
+            </div>
+
+            <div class="game-mode-item">
+              <span class="icon">⚡</span>
+              <div>
+                <strong>Điện Báo Tri Thức Lịch Sử Dưới Làn Đạn</strong>
+                <p>Giải mã các câu hỏi hỏa tốc từ Bộ Chỉ huy trong trận đánh để gọi pháo cối chi viện, thả khói ngụy trang hoặc phát động toàn dân nổi dậy.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="game.html" class="btn btn-gold" style="font-size: 15px; padding: 16px 36px;">
+            <span>BƯỚC VÀO TRÒ CHƠI CHIẾN LƯỢC NGAY</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <!-- Teaser Preview Frame -->
+        <div class="game-teaser-frame">
+          <div class="teaser-bar">
+            <div class="teaser-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>VNR202 / BÀN CỜ CHIẾN LƯỢC</span>
+          </div>
+
+          <div class="teaser-canvas-wrap">
+            <div class="radar-sweep"></div>
+            <span class="teaser-badge">SIMULATION ENGINE 2D</span>
+            <div class="teaser-title">SA BÀN CHIẾN DỊCH</div>
+            <div class="teaser-sub">Trải nghiệm chỉ huy đường lối 2 miền và chiến thuật trận địa Ấp Bắc sống động trên trình duyệt.</div>
+            <a href="game.html" class="play-teaser-btn">CHƠI NGAY MIỄN PHÍ ⚔</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: QUIZ & STUDY HUB -->
+    <section class="section-pad" id="on-tap" aria-labelledby="quiz-section-title">
+      <div class="shell">
+        <div class="section-index">
+          <span>04 / NGÂN HÀNG CÂU HỎI ÔN TẬP & NGUỒN TÀI LIỆU</span>
+          <span class="source">BÁM SÁT 100% NỘI DUNG BUỔI 15</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">HỌC TẬP VÀ ĐỐI CHIẾU KIẾN THỨC</p>
+          <h2 id="quiz-section-title" class="section-title">
+            TRẮC NGHIỆM ÔN TẬP <span class="gold">SESSION 15.</span>
+          </h2>
+          <p class="section-desc">
+            Hệ thống gồm 15 câu hỏi trắc nghiệm trọng tâm bao quát toàn bộ nội dung Chương 2, Phần II, Mục 1. Mỗi đáp án đều có phần giải thích cặn kẽ và số slide đối chiếu trong giáo trình gốc.
+          </p>
+        </div>
+
+        <div class="quiz-hub-grid">
+          <!-- Quiz Box -->
+          <div class="quiz-card">
+            <div class="quiz-header">
+              <span id="quiz-counter-text" class="quiz-counter">CÂU HỎI 1 / 15</span>
+              <span id="quiz-source-text" class="quiz-source">Session 15 - Slide 4</span>
+            </div>
+
+            <p id="quiz-q-text" class="question-text">
+              Đang tải câu hỏi trắc nghiệm...
+            </p>
+
+            <div id="quiz-options-container" class="quiz-options">
+              <!-- Populated by app.js -->
+            </div>
+
+            <div id="quiz-feedback-box" class="quiz-feedback"></div>
+
+            <div class="quiz-actions">
+              <span style="font-size: 12px; color: var(--muted);">Chọn một đáp án để kiểm tra kết quả ngay lập tức</span>
+              <button id="quiz-next-btn" class="btn btn-gold" style="display: none; padding: 10px 20px; font-size: 12px;">
+                CÂU TIẾP THEO →
+              </button>
+            </div>
+          </div>
+
+          <!-- Official Curriculum Links & Sources -->
+          <div class="study-sources-card">
+            <h3>TÀI LIỆU & GIÁO TRÌNH GỐC</h3>
+            <p>
+              Toàn bộ nội dung học tập và câu hỏi ôn tập được biên soạn trực tiếp từ bộ bài giảng chuẩn của môn học <strong>VNR202 - Cập nhật SP24</strong> do Trường Đại học FPT cung cấp.
+            </p>
+
+            <div class="source-item-row">
+              <div class="source-pill">
+                <strong>Buổi 15 (Session 15)</strong>
+                <span>1954 — 1965</span>
+              </div>
+              <div class="source-pill">
+                <strong>Định dạng tài liệu</strong>
+                <span>PPTX, PDF & Canva</span>
+              </div>
+              <div class="source-pill">
+                <strong>Tổng số slide bài giảng</strong>
+                <span>18 Slides chi tiết</span>
+              </div>
+              <div class="source-pill">
+                <strong>Số hình ảnh tư liệu gốc</strong>
+                <span>60 bức ảnh lịch sử</span>
+              </div>
+            </div>
+
+            <a href="https://www.canva.com/design/DAGCSeMprO0/CwZrGEqavFv1w4dK4Jp6eQ/edit?utm_content=DAGCSeMprO0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="canva-link-btn">
+              <span>XEM SLIDE GỐC TRÊN CANVA</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: HISTORICAL VIDEO ARCHIVES -->
+    <section class="section-pad" id="video" aria-labelledby="video-title">
+      <div class="shell">
+        <div class="section-index">
+          <span>05 / THƯỚC PHIM TƯ LIỆU LỊCH SỬ</span>
+          <span class="source">GÓC NHÌN ĐA CHIỀU QUA ẢNH & THƯỚC PHIM QUÝ</span>
+        </div>
+
+        <div class="section-head">
+          <p class="eyebrow">HỌC LỊCH SỬ QUA HÌNH ẢNH SỐNG ĐỘNG</p>
+          <h2 id="video-title" class="section-title">
+            VIDEO TƯ LIỆU <span class="gold">GIAI ĐOẠN 1954 — 1965.</span>
+          </h2>
+          <p class="section-desc">
+            Tuyển chọn 3 thước phim tư liệu quý giá về các dấu mốc mang tính bước ngoặt: Phong trào Đồng Khởi Bến Tre 1960, Chiến thắng Ấp Bắc 1963 và Huyền thoại Đường Hồ Chí Minh trên biển.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <!-- Video 1: Đồng Khởi Bến Tre -->
+          <article class="video-card" onclick="openVideoModal('Dykwdja71IU', 'Bão Táp Đồng Khởi Bến Tre 1960 — Bước Nhảy Vọt Lịch Sử')">
+            <div class="video-thumb">
+              <img src="assets/history/image63.png" alt="Phong trào Đồng Khởi Bến Tre 1960" loading="lazy" style="object-fit: cover;">
+              <div class="video-thumb-overlay"></div>
+              <span class="video-play-icon" title="Bấm để phát video">▶</span>
+              <span class="video-duration">TƯ LIỆU LỊCH SỬ</span>
+            </div>
+            <div class="video-info">
+              <small>PHONG TRÀO ĐỒNG KHỞI</small>
+              <h4>Bão táp Đồng Khởi Bến Tre 1960 — Bước nhảy vọt lịch sử</h4>
+              <p>Khám phá khí thế quật khởi của Đội quân tóc dài và cuộc khởi nghĩa Mỏ Cày làm tan rã từng mảng bộ máy kìm kẹp của địch.</p>
+              <span class="action">XEM VIDEO TRỰC TIẾP ▶</span>
+            </div>
+          </article>
+
+          <!-- Video 2: Chiến Thắng Ấp Bắc -->
+          <article class="video-card" onclick="openVideoModal('zRa9rAOWrKg', 'Chiến Thắng Ấp Bắc 1963: Đòn Giáng Tan Tành Trực Thăng Vận & Thiết Xa Vận')">
+            <div class="video-thumb">
+              <img src="assets/history/image85.png" alt="Chiến thắng Ấp Bắc 1963" loading="lazy" style="object-fit: cover;">
+              <div class="video-thumb-overlay"></div>
+              <span class="video-play-icon" title="Bấm để phát video">▶</span>
+              <span class="video-duration">QUÂN ĐỘI NHÂN DÂN</span>
+            </div>
+            <div class="video-info">
+              <small>CHIẾN THẮNG ẤP BẮC 1963</small>
+              <h4>Chiến thắng Ấp Bắc: Đòn giáng tan tành "Trực thăng vận & Thiết xa vận"</h4>
+              <p>Phân tích diễn biến trận đánh ngày 2/1/1963 tại Cai Lậy (Mỹ Tho), mở ra cao trào "Thi đua Ấp Bắc, giết giặc lập công".</p>
+              <span class="action">XEM VIDEO TRỰC TIẾP ▶</span>
+            </div>
+          </article>
+
+          <!-- Video 3: Đoàn Tàu Không Số 759 -->
+          <article class="video-card" onclick="openVideoModal('Dykwdja71IU', 'Huyền Thoại Đường Hồ Chí Minh Trên Biển — Đoàn Tàu Không Số 759')">
+            <div class="video-thumb">
+              <img src="assets/history/image51.png" alt="Đoàn Tàu Không Số 759" loading="lazy" style="object-fit: cover;">
+              <div class="video-thumb-overlay"></div>
+              <span class="video-play-icon" title="Bấm để phát video">▶</span>
+              <span class="video-duration">KÝ SỰ BIỂN ĐÔNG</span>
+            </div>
+            <div class="video-info">
+              <small>HUYẾT MẠCH BIỂN ĐÔNG</small>
+              <h4>Huyền thoại Đường Hồ Chí Minh trên biển — Đoàn Tàu Không Số 759</h4>
+              <p>Hành trình anh dũng chở hàng chục tấn vũ khí từ miền Bắc vượt hạm đội 7 của Mỹ chi viện thần tốc cho chiến trường miền Nam.</p>
+              <span class="action">XEM VIDEO TRỰC TIẾP ▶</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Site Footer -->
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <img class="brand-flag" src="assets/vietnam-flag.svg" alt="Quốc kỳ">
+            <span class="brand-copy">
+              <span class="brand-name">VNR <span class="gold">202</span></span>
+              <small>LỊCH SỬ ĐẢNG CỘNG SẢN VIỆT NAM</small>
+            </span>
+          </div>
+          <p>
+            Chuyên trang học tập và ôn tập môn học VNR202 theo phương pháp kể chuyện tương tác kết hợp mô phỏng chiến lược lịch sử. Nguồn học liệu bám sát bài giảng cập nhật SP24 của Đại học FPT.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-links-col">
+            <h5>MỤC BÀI HỌC</h5>
+            <ul>
+              <li><a href="#tong-quan">Bối cảnh lịch sử</a></li>
+              <li><a href="#duong-loi">Đường lối 2 miền</a></li>
+              <li><a href="#nien-bieu">Niên biểu sự kiện</a></li>
+              <li><a href="#on-tap">Ngân hàng câu hỏi</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h5>TRÒ CHƠI LỊCH SỬ</h5>
+            <ul>
+              <li><a href="game.html">Bàn cờ Chiến lược 1954–1965</a></li>
+              <li><a href="game.html">Phòng tuyến Ấp Bắc 1963</a></li>
+              <li><a href="game.html">Điện báo khẩn tri thức</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 VNR202 Học Tập & Nghiên Cứu Lịch Sử Đảng. Xây dựng với niềm tự hào dân tộc.</span>
+        <a href="#top">VỀ ĐẦU TRANG ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Milestone Details Modal Dialog -->
+  <div id="milestone-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close" type="button" onclick="closeMilestoneModal()" aria-label="Đóng cửa sổ">✕</button>
+      <div id="modal-body-content">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Player Lightbox Modal -->
+  <div id="video-lightbox-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <div class="modal-dialog" style="width: min(880px, 95%); padding: 24px;">
+      <button class="modal-close" type="button" onclick="closeVideoModal()" aria-label="Đóng video">✕</button>
+      <h3 id="video-modal-title" style="font-size: 20px; color: #fff; margin-bottom: 14px; padding-right: 40px;"></h3>
+      <div class="video-embed-responsive" style="position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; border: 1px solid var(--gold);">
+        <iframe id="video-modal-iframe" src="" style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <span style="font-size: 13px; color: var(--muted);">Thước phim tư liệu phục vụ học tập môn VNR202</span>
+        <a id="video-modal-ytlink" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="font-size: 12px; padding: 8px 16px; border-color: var(--gold); color: var(--gold);">
+          MỞ TRÊN YOUTUBE ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

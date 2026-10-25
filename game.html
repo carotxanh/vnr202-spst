@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a110e">
+  <title>Bàn Cờ Chiến Lược 1954 - 1965 | VNR202</title>
+  <link rel="icon" type="image/svg+xml" href="assets/vietnam-flag.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+  <script defer src="game.js"></script>
+</head>
+<body class="game-body">
+  <!-- Background Music Audio -->
+  <audio id="bg-audio" src="assets/audio/background-theme.mp3" preload="auto" loop autoplay></audio>
+  
+  <!-- Top Navigation Bar -->
+  <header class="game-topbar">
+    <div class="game-brand">
+      <img src="assets/vietnam-flag.svg" alt="Quốc kỳ Việt Nam" class="flag">
+      <span>VNR 202 <span style="color: var(--gold)">/ CHIẾN LƯỢC HAI MIỀN</span></span>
+    </div>
+    <div class="game-title-pill">
+      <span class="dot"></span>
+      <span>GIAI ĐOẠN 1954 — 1965: MỘT ĐẢNG • HAI NHIỆM VỤ CHIẾN LƯỢC</span>
+    </div>
+    <div class="game-top-actions">
+      <button id="sound-toggle" class="game-btn-icon" type="button">🔊 ÂM THANH: BẬT</button>
+      <a href="index.html" class="game-btn-icon" style="color: var(--gold); border-color: var(--gold);">
+        GIÁO TRÌNH VNR202 ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- Game Mode Tabs -->
+  <nav class="game-mode-tabs" aria-label="Chế độ chơi">
+    <button class="game-tab active" data-mode="strategy" type="button">
+      <span>★ CHẾ ĐỘ 1:</span> SA BÀN CHIẾN LƯỢC TOÀN CẢNH (1954 - 1965)
+    </button>
+    <button class="game-tab" data-mode="tactical" type="button">
+      <span>⚔ CHẾ ĐỘ 2:</span> PHÒNG TUYẾN ẤP BẮC (BẺ GÃY TRỰC THĂNG VẬN & THIẾT XA VẬN)
+    </button>
+      <button class="game-tab" data-mode="supply" type="button">
+      <span>⚓ CHẾ ĐỘ 3:</span> HẢI TRÌNH TÀU KHÔNG SỐ 759 (BIỂN ĐÔNG)
+    </button>
+  </nav>
+
+  <!-- Viewport Area -->
+  <main class="game-viewport">
+    <!-- MODE 1: GRAND STRATEGY VIEW -->
+    <div id="strategy-view" class="strategy-view">
+      <!-- Left Sidebar: Strategic Resources & Directives -->
+      <aside class="strategy-sidebar">
+        <div class="sidebar-heading">
+          <span>TIỀM LỰC & CHỈ SỐ CÁCH MẠNG</span>
+          <small style="color: var(--muted); font-size: 10px;">GIÁO TRÌNH BUỔI 15</small>
+        </div>
+
+        <div class="resource-cluster">
+          <div class="resource-card">
+            <div class="res-header">
+              <span class="res-name"><i style="color: #22c55e;">●</i> Hậu Phương Miền Bắc</span>
+              <span id="val-north" class="res-val">45%</span>
+            </div>
+            <div class="res-bar"><div id="res-north" class="res-fill green" style="width: 45%;"></div></div>
+            <small style="font-size: 11px; color: var(--muted); margin-top: 4px; display: block;">Nông nghiệp HTX, Công nghiệp hóa, Chi viện</small>
+          </div>
+
+          <div class="resource-card">
+            <div class="res-header">
+              <span class="res-name"><i style="color: #ef4444;">●</i> Tiền Tuyến Miền Nam</span>
+              <span id="val-south" class="res-val">35%</span>
+            </div>
+            <div class="res-bar"><div id="res-south" class="res-fill red" style="width: 35%;"></div></div>
+            <small style="font-size: 11px; color: var(--muted); margin-top: 4px; display: block;">Đội quân tóc dài, Du kích, Vùng giải phóng</small>
+          </div>
+
+          <div class="resource-card">
+            <div class="res-header">
+              <span class="res-name"><i style="color: #38bdf8;">●</i> Tuyến Huyết Mạch 559 & 759</span>
+              <span id="val-supply" class="res-val">20%</span>
+            </div>
+            <div class="res-bar"><div id="res-supply" class="res-fill blue" style="width: 20%;"></div></div>
+            <small style="font-size: 11px; color: var(--muted); margin-top: 4px; display: block;">Đường Trường Sơn & Đoàn tàu Không số</small>
+          </div>
+
+          <div class="resource-card">
+            <div class="res-header">
+              <span class="res-name"><i style="color: #fbbf24;">●</i> Chính Nghĩa & Mặt Trận DTGP</span>
+              <span id="val-solidarity" class="res-val">50%</span>
+            </div>
+            <div class="res-bar"><div id="res-solidarity" class="res-fill gold" style="width: 50%;"></div></div>
+            <small style="font-size: 11px; color: var(--muted); margin-top: 4px; display: block;">Mặt trận Dân tộc Giải phóng & Quốc tế XHCN</small>
+          </div>
+        </div>
+
+        <!-- Historical Principle Box -->
+        <div class="campaign-phase-card" style="margin-top: auto;">
+          <span class="phase-tag">NGUYÊN TẮC LÃNH ĐẠO CỐT LÕI</span>
+          <h4>Đại hội III của Đảng (9/1960)</h4>
+          <p>
+            "Cách mạng XHCN ở miền Bắc giữ vai trò <strong>quyết định nhất</strong> đối với sự phát triển của toàn bộ cách mạng Việt Nam; Cách mạng DTDCND ở miền Nam giữ vai trò <strong>quyết định trực tiếp</strong> đối với sự nghiệp giải phóng miền Nam."
+          </p>
+        </div>
+      </aside>
+
+      <!-- Center: Tactical Map Canvas -->
+      <section class="strategy-map-area">
+        <div class="map-control-overlay">
+          <div class="year-indicator">
+            <small>THỜI ĐIỂM LỊCH SỬ</small>
+            <strong id="stage-year-text">1954 — 1955</strong>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="game-btn-icon" onclick="switchGameMode('tactical')" style="background: rgba(209, 58, 41, 0.2); border-color: #ef4444; color: #fca5a5;">
+              CHIẾN TRƯỜNG ẤP BẮC ⚔
+            </button>
+          </div>
+        </div>
+        <canvas id="strategy-canvas"></canvas>
+      </section>
+
+      <!-- Right Sidebar: Historical Event Dilemmas -->
+      <aside class="strategy-sidebar right">
+        <div class="sidebar-heading">
+          <span>TÌNH HUỐNG & QUYẾT SÁCH</span>
+          <span id="score-display" style="color: var(--gold); font-size: 13px;">ĐIỂM: 0</span>
+        </div>
+
+        <div class="campaign-phase-card">
+          <span class="phase-tag" id="stage-directive-text">HỘI NGHỊ TRUNG ƯƠNG 7 & 8 (KHÓA II)</span>
+          <h4 id="stage-title-text">Hàn gắn Vết thương & Tiếp quản Thủ đô</h4>
+          <p id="stage-desc-text">
+            Tháng 7/1954 Hiệp định Genève được ký kết. 10/10/1954 tiếp quản Thủ đô Hà Nội. Đất nước tạm chia cắt tại vĩ tuyến 17.
+          </p>
+        </div>
+
+        <div id="dilemma-container" class="event-card-container">
+          <!-- Populated by game.js -->
+        </div>
+      </aside>
+    </div>
+
+    <!-- MODE 2: TACTICAL DEFENSE (TRẬN ĐỊA ẤP BẮC) -->
+    <div id="tactical-view" class="tactical-view">
+      <div class="tactical-canvas-wrap">
+        <canvas id="tactical-canvas"></canvas>
+
+        <!-- Tactical HUD Overlay -->
+        <div class="tactical-hud">
+          <div class="tactical-stats">
+            <div class="stat-pill">
+              <small>PHÒNG TUYẾN ẤP BẮC</small>
+              <strong id="tactical-hp" style="color: #22c55e;">100 / 100</strong>
+            </div>
+            <div class="stat-pill">
+              <small>ĐIỂM TIẾP TẾ</small>
+              <strong id="tactical-points" style="color: var(--gold);">100</strong>
+            </div>
+            <div class="stat-pill">
+              <small>ĐIỂM CHIẾN DỊCH</small>
+              <strong id="tactical-score">0</strong>
+            </div>
+            <div class="stat-pill">
+              <small>ĐỢT TIẾN CÔNG</small>
+              <strong id="tactical-wave" style="color: var(--gold);">1 / 5</strong>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <button class="game-btn-icon" onclick="triggerTacticalIntel()" style="background: rgba(240, 195, 84, 0.2); border-color: var(--gold); color: var(--gold);">
+              ⚡ ĐIỆN BÁO TRI THỨC (XIN HỎA LỰC PHÁO CỐI)
+            </button>
+            <button class="game-btn-icon" onclick="switchGameMode('strategy')">
+              ← VỀ SA BÀN CHIẾN LƯỢC
+            </button>
+          </div>
+        </div>
+
+        <!-- Tactical Unit Deployment Deck -->
+        <div class="tactical-deck" role="toolbar" aria-label="Bố trí lực lượng">
+          <div class="deck-card selected" data-unit="sniper" onclick="selectDeckUnit('sniper')">
+            <span class="icon">🎯</span>
+            <strong>Tổ Bắn Tỉa</strong>
+            <span class="cost">30 Điểm</span>
+          </div>
+          <div class="deck-card" data-unit="mg" onclick="selectDeckUnit('mg')">
+            <span class="icon">💥</span>
+            <strong>Trung Liên</strong>
+            <span class="cost">45 Điểm</span>
+          </div>
+          <div class="deck-card" data-unit="mine" onclick="selectDeckUnit('mine')">
+            <span class="icon">💣</span>
+            <strong>Tổ Mìn B40</strong>
+            <span class="cost">40 Điểm</span>
+          </div>
+          <div class="deck-card" data-unit="hairArmy" onclick="selectDeckUnit('hairArmy')">
+            <span class="icon">🌾</span>
+            <strong>Đội Tóc Dài</strong>
+            <span class="cost">35 Điểm</span>
+          </div>
+        </div>
+
+        <!-- Emergency Intel Quiz Modal in Combat -->
+        <div id="intel-prompt" class="intel-prompt"></div>
+      </div>
+    </div>
+  </main>
+
+      <!-- MODE 3: OCEAN STEALTH RUNNER (ĐOÀN TÀU KHÔNG SỐ 759) -->
+    <div id="supply-view" class="supply-view" style="display: none; width: 100%; height: 100%; position: relative; background: #06111a;">
+      <div class="supply-canvas-wrap" style="flex: 1; position: relative; width: 100%; height: 100%; overflow: hidden;">
+        <canvas id="supply-canvas" style="width: 100%; height: 100%; display: block;"></canvas>
+
+        <!-- Supply HUD -->
+        <div class="tactical-hud">
+          <div class="tactical-stats">
+            <div class="stat-pill">
+              <small>HẢI TRÌNH ĐẾN BẾN ĐÍCH</small>
+              <strong id="supply-distance" style="color: #38bdf8;">1000 HẢI LÝ</strong>
+            </div>
+            <div class="stat-pill">
+              <small>VŨ KHÍ CHI VIỆN</small>
+              <strong id="supply-cargo" style="color: var(--gold);">35 TẤN</strong>
+            </div>
+            <div class="stat-pill">
+              <small>ĐỘ ẨN NẤP NGỤY TRANG</small>
+              <strong id="supply-stealth" style="color: #22c55e;">100%</strong>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <button class="game-btn-icon" onclick="triggerSeaSmoke()" style="background: rgba(56, 189, 248, 0.2); border-color: #38bdf8; color: #7dd3fc;">
+              💨 THẢ MÀN KHÓI NGỤY TRANG (NÉ RADAR)
+            </button>
+            <button class="game-btn-icon" onclick="switchGameMode('strategy')">
+              ← VỀ SA BÀN CHIẾN LƯỢC
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating In-Game Toast for Sea Mode -->
+        <div id="sea-notification-toast" class="sea-toast" role="status" aria-live="polite"></div>
+
+        <!-- Controls for Ship (Click, Hold or Touch Drag) -->
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 14px; z-index: 20; background: rgba(10, 20, 28, 0.88); border: 1px solid var(--panel-border); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(8px);">
+          <button class="game-btn-icon" style="padding: 10px 20px; font-size: 14px; border-color: #38bdf8; color: #7dd3fc;" 
+                  onmousedown="steerHold(-1)" onmouseup="steerHold(0)" onmouseleave="steerHold(0)"
+                  ontouchstart="steerHold(-1); event.preventDefault();" ontouchend="steerHold(0)">
+            ◀ BẺ LÁI TRÁI (A)
+          </button>
+          <button class="game-btn-icon" style="padding: 10px 20px; font-size: 14px; border-color: #38bdf8; color: #7dd3fc;" 
+                  onmousedown="steerHold(1)" onmouseup="steerHold(0)" onmouseleave="steerHold(0)"
+                  ontouchstart="steerHold(1); event.preventDefault();" ontouchend="steerHold(0)">
+            BẺ LÁI PHẢI (D) ▶
+          </button>
+        </div>
+        <div style="position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%); font-size: 11px; color: rgba(255, 255, 255, 0.5); pointer-events: none; letter-spacing: 0.08em; text-transform: uppercase;">
+          KÉO CHUỘT / PHÍM A-D ĐỂ LÁI • PHÍM SPACE ĐỂ THẢ MÀN KHÓI
+        </div>
+      </div>
+    </div>
+
+  <!-- Final Victory / Evaluation Modal -->
+  <div id="game-result-modal" class="game-result-modal"></div>
+</body>
+</html>
